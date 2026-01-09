@@ -32,7 +32,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 
 ### 🔹 Verify Installation
 
-```powershell
+```bash
 choco --version
 ```
 
@@ -44,13 +44,13 @@ You should see a version number.
 
 ### 🔹 Install via Chocolatey
 
-```powershell
+```bash
 choco install kubernetes-cli -y
 ```
 
 ### 🔹 Verify
 
-```powershell
+```bash
 kubectl version --client
 ```
 
@@ -62,13 +62,13 @@ Minikube runs a local Kubernetes cluster.
 
 ### 🔹 Install
 
-```powershell
+```bash
 choco install minikube -y
 ```
 
 ### 🔹 Verify
 
-```powershell
+```bash
 minikube version
 ```
 
@@ -91,7 +91,7 @@ Restart your system after installation.
 
 ### 🔹 Verify Docker
 
-```powershell
+```bash
 docker version
 ```
 
@@ -103,7 +103,7 @@ You should see **Client and Server**.
 
 ### 🔹 Start Minikube using Docker driver
 
-```powershell
+```bash
 minikube start --driver=docker
 ```
 
@@ -113,7 +113,7 @@ This may take a few minutes the first time.
 
 ## 6️⃣ Verify Kubernetes Cluster
 
-```powershell
+```bash
 kubectl get nodes
 ```
 
@@ -128,13 +128,13 @@ minikube   Ready    control-plane   ...   ...
 
 ## 7️⃣ Enable Ingress (Optional but Recommended)
 
-```powershell
+```bash
 minikube addons enable ingress
 ```
 
 Check:
 
-```powershell
+```bash
 kubectl get pods -n ingress-nginx
 ```
 
@@ -142,7 +142,7 @@ kubectl get pods -n ingress-nginx
 
 ## 8️⃣ Useful Minikube Commands
 
-```powershell
+```bash
 minikube status
 minikube stop
 minikube delete
@@ -178,7 +178,7 @@ minikube dashboard
 
 Run:
 
-```powershell
+```bash
 kubectl get pods -A
 ```
 
