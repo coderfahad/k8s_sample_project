@@ -21,7 +21,7 @@ Chocolatey makes installing tools on Windows very easy.
 1. Open **PowerShell as Administrator**
 2. Run the following command:
 
-```powershell
+```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; \
 [System.Net.ServicePointManager]::SecurityProtocol = \
 [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; \
